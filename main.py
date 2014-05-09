@@ -1,8 +1,9 @@
 import argparse
 import sqlite3
+from os.path import expanduser
 
 #global variables
-DB_PATH = 'note.db'
+DB_PATH = expanduser('~') + '/.note.db' #won't work with windows
 
 def add(args):
 	c.execute("insert into main values (?,?)",(args.t or "", args.m))
