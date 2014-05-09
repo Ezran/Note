@@ -2,7 +2,7 @@
 
 A simple program I wrote to practice Python, SQL and argument parsing from the command line.
 
-Useage:  note [add | ls | rm]
+Useage:
 
 	note add -t TAG (optional) -m NOTE (required)
 
@@ -17,4 +17,4 @@ To install:
 
 	sudo chmod +x note && cp note /usr/bin/
 
-	The database will save to the home directory as .note.db
+The database will save to the home directory as .note.db
