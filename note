@@ -45,7 +45,7 @@ def delete(args):
 			print "Cancelled."
 	else:
 		try:
-			c.execute('delete from main where oid=?',args.i)
+			c.execute('delete from main where oid=(?)',(args.i,))
 		except sqlite3.Error as e:
 			print "And error occured while deleting: " + e.args[0]
 	
